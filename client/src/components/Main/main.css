@@ -1,0 +1,563 @@
+
+/* arrow up */
+.arrow i {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  cursor: pointer;
+  background-color: #00a8b4;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background: rgba(255, 165, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+  color: orange;
+  margin-right: 4px;
+}
+
+.btn {
+  background-color: #ffbb00e3;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  padding: 5px 20px;
+  border: none;
+}
+
+.btn:hover {
+  background: none;
+  color: #ffbb00e3;
+  border: 2px solid #ffbb00e3;
+  font-weight: bold;
+}
+
+/* Home CSS */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+}
+
+.home .content {
+  text-align: center;
+}
+.home .content h3 {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.home .content p {
+  font-size: 2.5rem;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.home .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 91vh;
+  object-fit: cover;
+}
+
+.home .controls {
+  padding: 1rem;
+  border-radius: 5rem;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 10rem;
+}
+
+/* Booking CSS Starts HERE */
+
+/* Class Book */
+
+.book .row {
+  margin: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.book .row .image {
+  flex: 1 1 40rem;
+}
+
+.book .row .image img {
+  width: 100%;
+}
+
+.book .row form {
+  flex: 1 1 40rem;
+  height:auto;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.book .row form .inputBox {
+  padding: 0.5rem 0;
+  width: 150px;
+  
+}
+
+.book .row form .inputBox .add-btn{
+  width: 100px;
+  height: auto;
+  background: var(--orange);
+  background: #033747e3;
+  color: white;
+  border: 0.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-btn:hover {
+  background: rgba(47, 116, 121, 0.733);
+}
+
+
+.book .row form .inputBox input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: none;
+}
+
+.book .row form .inputBox h3 {
+  font-size: 2rem;
+  /* padding: 1rem 0; */
+  color: #666;
+}
+
+/* class space */
+.heading span.space {
+  margin-top: 10%;
+  background: none;
+}
+
+/* class inputBox */
+
+.book .row table .inputBox .arrival {
+  margin-left: 5%;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 1rem;
+  background: var(--orange);
+  background: #033747e3;
+  color: white;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.book-btn:hover {
+  background: rgba(47, 116, 121, 0.733);
+}
+
+/* SERIVICES */
+
+.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.services .box-container .box {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.199);
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.services .box-container .box i {
+  padding: 1rem;
+  font-size: 5rem;
+  color: var(--orange);
+}
+
+.services .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.services .box-container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.services .box-container .box:hover {
+  box-shadow: 0 1rem 2rem rgb(218, 213, 213);
+}
+
+.about p {
+  font-size: 23px;
+  font-weight: 500;
+}
+.packages h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.packages h3 {
+  font-size: 20px;
+}
+
+/* Gallery */
+.gallery .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.gallery .box-container .box {
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border: 1rem solid rgba(252, 252, 252, 0);
+  border-radius: 0.5rem;
+  flex: 1 1 30rem;
+  height: 25rem;
+  position: relative;
+}
+
+.gallery .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .content {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.gallery .box-container .box:hover .content {
+  top: 0;
+}
+
+.gallery .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: var(--orange);
+}
+
+.gallery .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+
+/* Places */
+
+.places .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.places .box-container .box {
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.199);
+  /* border:1rem solid #fff; */
+  border: 1rem solid rgba(252, 252, 252, 0);
+  border-radius: 0.5rem;
+  flex: 1 1 30rem;
+  height: 25rem;
+  position: relative;
+}
+
+.places .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.places .box-container .box .content {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.places .box-container .box:hover .content {
+  top: 0;
+}
+
+.places .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: var(--orange);
+}
+
+.places .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+
+/* Review */
+
+.review .review-slider {
+  box-shadow: var(--box-shadow);
+}
+
+.review .review-slider .slide {
+  background: var(--bg-color-1);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+.review .review-slider .slide img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.review .review-slider .slide h3 {
+  font-size: 2.5rem;
+  color: var(--text-color-1);
+}
+
+.review .review-slider .slide p {
+  font-size: 1.6rem;
+  color: var(--text-color-2);
+  line-height: 1.7;
+  padding: 1rem 0;
+}
+
+.review .review-slider .slide .stars {
+  padding: 1rem 0;
+  padding-bottom: 1.5rem;
+}
+
+.review .review-slider .slide .stars i {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+/* Feed Back */
+.fd_bk {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.fd_bk span {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #2e3d49;
+}
+.fd_bk .shortdesc2 {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #2e3d49;
+  margin-bottom: 10px;
+}
+.feed_box {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(#f0a500, #fef5ed);
+  background-size: cover;
+  padding: 50px 80px;
+  background-attachment: fixed;
+}
+.feed {
+  width: 800px;
+  height: 250px;
+  position: relative;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.6), 0 0 80px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+}
+.feed form {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.feed form label {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.feed textarea {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px lightgray;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  color: #2e3d49;
+  background: #fff9;
+  font-weight: 600;
+}
+
+.feed form textarea {
+  width: 100%;
+  height: 100px;
+  text-transform: none;
+}
+.feed #fsubmit {
+  margin-top: 25px;
+  background: linear-gradient(to right, #85fa37, #a5fab349);
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #020202c4;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .logo {
+  padding-bottom: 1rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box p i {
+  padding-right: 0.5rem;
+  color: #29d9d5;
+}
+
+.footer .box-container .box .share {
+  padding-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  border: 0.2rem solid #29d9d5;
+  color: #29d9d5;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.footer .box-container .box .links {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box .links:hover {
+  color: #29d9d5;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .links i {
+  padding-right: 0.5rem;
+  color: #29d9d5;
+}
+
+.footer .box-container .box form .email {
+  width: 100%;
+  border-radius: 5rem;
+  border: 0.2rem solid #29d9d5;
+  background: none;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: #aaa;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.4rem;
+}
+
+.credit {
+  background: #222;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  color: #aaa;
+}
+
+.credit span {
+  color: #29d9d5;
+}

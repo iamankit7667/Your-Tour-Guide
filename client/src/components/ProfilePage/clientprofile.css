@@ -1,0 +1,340 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f1f1f1;
+}
+
+.profile-down {
+  border-radius: 25px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.profile-background {
+  height: 100%;
+  width: 100%;
+  padding: 0.4% 5%;
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-background .white-panel {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+._right {
+  width: auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+._right .btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+._left {
+  width: auto;
+  height: 450px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+._right table,
+._right th,
+._right td {
+  width: 400px;
+  height: 50px;
+  text-align: left;
+  font-size: 30px;
+}
+
+._right th {
+  font-size: 20px;
+}
+
+._right td {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 40px;
+  text-transform: none;
+}
+
+._left ._img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  padding: 0;
+  border-radius: 100%;
+}
+
+._left ._img img {
+  width: 350px;
+  height: 350px;
+  left: 50%;
+  border-radius: 100%;
+  border: 20px solid rgba(83, 80, 80, 0.202);
+  display: block;
+}
+
+._left ._img .img_content {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.527);
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+._left ._img:hover .img_content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.profile ._left .img_content i {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.btn_profile {
+  margin-top: 6px;
+  width: 25rem;
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fac102;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.btn_profile:hover {
+  background: none;
+  border: 2px solid #fac102;
+  color: #fac102;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.pass-modal-bg {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  visibility: visible;
+  opacity: 1;
+  z-index: 60;
+}
+
+.pass-modal-bg .edit-form {
+  position: relative;
+  background-color: #fff;
+  height: auto;
+  width: 35%;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.profileTourReviews{
+  border: 1px solid black;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.profileTourReviews h5{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profileTourReviews p{
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.pass-modal-bg .edit-form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+._right .edit-form {
+  border: 2px solid black;
+  position: relative;
+  background-color: #fff;
+  height: 350px;
+  width: 400px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+._right .edit-form span {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  width: 60px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+._right .edit-form span:hover {
+  background-color: rgba(255, 0, 0, 0.734);
+  color: #fff;
+}
+
+._right .edit-form h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+._right .edit-form form {
+  padding: 20px 30px;
+}
+
+._right .edit-form label {
+  font-size: 18px;
+  margin-top: 10px;
+  text-transform: none;
+}
+
+._right .edit-form input {
+  border: 1px solid rgba(25, 19, 19, 0.764);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+._right .edit-form a {
+  font-size: small;
+  text-decoration: underline;
+}
+
+.pass-modal-bg .edit-form span {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  width: 60px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pass-modal-bg .edit-form span:hover {
+  background-color: rgba(255, 0, 0, 0.734);
+  color: #fff;
+}
+
+.pass-modal-bg .edit-form h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.pass-modal-bg .edit-form form {
+  padding: 20px 30px;
+}
+
+.pass-modal-bg .edit-form label {
+  font-size: 18px;
+  margin-top: 10px;
+  text-transform: none;
+}
+
+.pass-modal-bg .edit-form input {
+  border: 1px solid rgba(25, 19, 19, 0.764);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.pass-modal-bg .edit-form a {
+  font-size: small;
+  text-decoration: underline;
+}
+
+.profile-feed{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  font-size: large;
+}
+.profile-feed h3{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #fac102;
+}

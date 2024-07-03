@@ -1,0 +1,42 @@
+.input-box {
+  position: relative;
+}
+
+.input-box input {
+  box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  outline: none;
+  background: none;
+  text-transform: none;
+  height: 50px;
+  width: 370px;
+  line-height: 100%;
+  font-size: 18px;
+  padding-left: 45px;
+  color: #fff;
+  margin: 10px 0px;
+  transition: 0.3s;
+}
+
+.input-box .left-icon {
+  position: absolute;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  left: 7px;
+  top: 15px;
+}
+
+.input-box .right-icon {
+  position: absolute;
+  font-size: 21px;
+  cursor: pointer;
+  right: 10px;
+  top: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.input-box input:focus {
+  border: 2px solid var(--orange);
+  /* box-shadow: 0 0 8px 0 var(--orange); */
+}
