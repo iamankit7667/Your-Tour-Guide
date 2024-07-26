@@ -28,7 +28,7 @@ const Header = (props) => {
         }}
       ></div>
       <Link to={path} className="logo">
-        <span>P</span>ACK <span>U</span>R <span>B</span>AGS
+        <span>Y</span>OUR <span>T</span>OUR <span>G</span>UIDE
       </Link>
       <ul className="navbar">
         {props.navItems.map((item) => {

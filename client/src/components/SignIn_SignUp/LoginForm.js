@@ -106,7 +106,7 @@ function Form(props) {
           }}
         />
         <br></br>
-        <p>contact : packyourbagsofficial@gmail.com</p>
+        <p>contact : yourtourguide7667@gmail.com</p>
       </form>
     </div>
   );
