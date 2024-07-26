@@ -4,7 +4,8 @@ Your Tour Guide website serves as a comprehensive hub for family travel packages
 
 ## Website Links
 
-- Frontend URL:
-  ![HomePage](https://github.com/iamankit7667/Your-Tour-Guide/tree/main/client/public/YourTourGuide-HomePage.png)
+<!-- - Frontend URL: -->
 
-- Backend URL:
+![HomePage](https://github.com/iamankit7667/Your-Tour-Guide/blob/main/client/public/YourTourGuide-HomePage.png)
+
+<!-- - Backend URL: -->
