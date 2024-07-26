@@ -72,14 +72,13 @@ const Footer = () => {
           <div className="box">
             <h3>contact info</h3>
             <p>
-              <i className="fas fa-map"></i> indian institute of information
-              technology sricity, andra pradesh
+              <i className="fas fa-map"></i> Amity University
             </p>
             <p>
-              <i className="fas fa-phone"></i> +91-93987 17554
+              <i className="fas fa-phone"></i> +91-95086 59159
             </p>
             <p style={{ textTransform: "none" }}>
-              <i className="fas fa-envelope"></i> packyourbag@gmail.com{" "}
+              <i className="fas fa-envelope"></i> yourtourguide7667.com{" "}
             </p>
             <p>
               <i className="fas fa-clock"></i> 7:00am - 10:00pm
@@ -104,7 +103,7 @@ const Footer = () => {
       </div>
 
       <div className="credit">
-        Copyright © {currentYear} Created By <span>IIITS STUDENTS</span> | all
+        Copyright © {currentYear} Created By <span>Ankit Kumar</span> | all
         rights reserved !!
       </div>
     </>
