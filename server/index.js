@@ -32,20 +32,18 @@ app.use(
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://frontend-packurbags.onrender.com"],
+    origin: ["http://localhost:3000"],
     credentials: true,
   })
 );
-
 
 //connect to mongo
 mongoose
   .connect(process.env.MONGODB_LINK_ATLAS, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
   })
-  .then(() => console.log("MongoDb  Connected..."))
+  .then(() => console.log("MongoDb Connected..."))
   .catch((err) => console.log(err));
 
 // Static Files
@@ -74,7 +72,6 @@ const swaggerOptions = {
       servers: [
         {
           url: "http://localhost:9000",
-          url: "https://backend-packurbags.onrender.com",
         },
       ],
     },
