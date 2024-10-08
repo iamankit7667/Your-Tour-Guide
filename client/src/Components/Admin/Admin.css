@@ -1,0 +1,72 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+.Container .box {
+  display: block;
+  border: 2px solid #ffbb00e3;
+  border-radius: 2rem;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* simple css for table */
+.box table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.box table th{
+  color: rgba(255, 0, 0, 0.836);
+}
+
+.box th,
+td {
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.box tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.box th {
+  background-color: rgba(243, 243, 89, 0.842);
+  color: white;
+}
+
+/* Css for search bar inside input */
+.search {
+  width: 80%;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search i {
+  margin: auto;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.search input {
+  width: 100%;
+  border: 3px solid black;
+  padding: 20px;
+  height: 20px;
+  border-radius: 5px;
+  color: red;
+  font-size: 20px;
+}
+
+.admin {
+  text-transform: none;
+}
+
+.box .del{
+  color: red;
+  cursor: pointer;
+}

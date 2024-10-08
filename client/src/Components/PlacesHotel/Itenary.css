@@ -1,0 +1,125 @@
+.itinerary-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.day-container {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.day-container h3 {
+  margin: 0;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.day-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+}
+
+.day-container li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.day-container li:last-child {
+  margin-bottom: 0;
+}
+
+
+.day-container h3:hover {
+  background-color: #b3b3b3;
+  font-size: 30px;
+}
+
+.day-container h3 {
+  font-size: 30px;
+}
+
+.day-container h3:active {
+  background-color: #979696;
+}
+
+.day-container h3:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ccc;
+}
+.itinerary-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.day-container {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px #ddd;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.day-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px #ddd;
+}
+
+.day-container h3 {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #f9fafb;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.day-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.day-container li {
+  margin-bottom: 10px;
+}
+
+.day-container li:last-child {
+  margin-bottom: 0;
+}
+
+.day-container h3:hover {
+  background-color: #f0f1f3;
+}
+
+.day-container h3:active {
+  background-color: #e2e4e8;
+}
+
+.day-container h3:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ccc;
+}

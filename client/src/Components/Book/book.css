@@ -1,0 +1,154 @@
+.book {
+  width: 100%;
+  padding-right: auto;
+}
+.book .heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.book .heading span {
+  font-size: 3.5rem;
+  background: rgba(255, 165, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+  color: orange;
+}
+
+.book .heading span .space {
+  background: none;
+}
+.book .row {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: auto;
+  font-size: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+.book .row .box1 {
+  border: 3px solid rgba(130, 127, 127, 0.5);
+  margin-right: 3rem;
+  margin-left: 2rem;
+}
+.book .row .box1 .details{
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+.book .row .box2 {
+  width: 70%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.book .row .place-pic img {
+  width: 100%;
+}
+
+.book .row form .inputBox {
+  padding: 0.1rem 0;
+}
+
+.book .row form .inputBox input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: none;
+}
+
+.book .row form .inputBox h3 {
+  /* font-size: 2rem; */
+  /* padding:1rem 0; */
+  color: #666;
+}
+
+/* class space */
+.book .heading span.space {
+  margin-top: 10%;
+  background: none;
+}
+
+/* class inputBox */
+
+.book .row .arrival {
+  margin-left: 10%;
+  display: flex;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 1rem;
+  background: var(--orange);
+  background: #033747e3;
+  color: white;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.book-btn:hover {
+  background: rgba(47, 116, 121, 0.733);
+}
+
+.book .row form .Passengers{
+  border: 5px solid rgba(0, 0, 0, 0.607);
+  padding: 1rem;
+  display:flex;
+  gap:1rem;
+}
+
+.book .row form .Passengers .box1 {
+  width: 150px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  color: #333;
+  text-transform: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+.passname label {
+  font-size: 2rem;
+  color: #666;
+  width: 100%;
+  padding: 0%;
+}
+.passname select{
+  font-size: 2rem;
+  /* width: 100%; */
+  margin: 0;
+  text-align: center;
+  margin-top: 8px;
+}
+
+
+.passname {
+  padding: 0.1rem 0;
+}
+
+.passname input {
+  width: 320px;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  color: #333;
+  text-transform: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.passname select {
+  width: 15%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  color: #333;
+  text-transform: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}

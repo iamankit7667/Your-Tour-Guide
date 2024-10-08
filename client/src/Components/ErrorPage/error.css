@@ -1,0 +1,24 @@
+.error {
+  background: linear-gradient(rgb(134, 179, 243), rgba(229, 240, 76, 0.659));
+}
+
+.video-container-error video {
+  margin-left: 30px;
+  height: 70vh;
+  object-fit: 100%;
+}
+
+.vid1{
+  width: 35%;
+}
+
+.vid2{
+  width: 55%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.new-btn{
+  margin-bottom: 10px;
+}
