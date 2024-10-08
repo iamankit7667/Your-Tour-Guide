@@ -16,5 +16,6 @@ const getBaseUrl = () => {
 
 export default axios.create({
   baseURL: getBaseUrl(),
+  timeout: 5000,
 });
 
