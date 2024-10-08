@@ -7,14 +7,11 @@ import "./AddPlaces.css";
 import { navItems } from "./NavItems";
 
 function AddPlaces(props) {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const [btnValue, setBtnValue] = useState("Add");
   const navigate = useNavigate();
   const { id } = useParams();
 
-  // Retrieve the user object from localStorage
-  const user = JSON.parse(localStorage.getItem("user"));
-
-  // State for button value (Add/Update) and form fields
-  const [btnValue, setBtnValue] = useState("Add");
   const [image, setImage] = useState();
   const [placeinfo, setplaceinfo] = useState({
     from: "",
@@ -37,7 +34,6 @@ function AddPlaces(props) {
   });
 
   useEffect(() => {
-    // Fetch data if keyType is "edit"
     if (props.keyType === "edit") {
       Axios.get(`admins/place/${id}`).then((resp) => {
         if (resp.status !== 200) {
@@ -57,7 +53,7 @@ function AddPlaces(props) {
         }
       });
     }
-  }, [id, props.keyType]);
+  }, []);
 
   const onUpdateField = (e) => {
     const nextFieldState = {
@@ -93,13 +89,6 @@ function AddPlaces(props) {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-
-    // Check if the user object exists before proceeding
-    if (!user) {
-      alert("User not logged in. Please log in to add a place.");
-      return;
-    }
-
     const fd = new FormData();
     fd.append("id", new Date().valueOf() + Math.floor(Math.random() * 10));
     fd.append("from", placeinfo.from);
@@ -110,10 +99,10 @@ function AddPlaces(props) {
     fd.append("photo", image);
     fd.append("threeDay", JSON.stringify(placeinfo.threeDay));
     fd.append("fiveDay", JSON.stringify(placeinfo.fiveDay));
-
-    Axios.post(`admins/place/${user.username}`, fd, {
-      headers: { "Content-Type": "multipart/form-data" },
-    })
+    Axios
+      .post(`admins/place/${user.username}`, fd, {
+        headers: { "Content-Type": "multipart/form-data" },
+      })
       .then((resp) => {
         if (resp.status === 200) {
           setplaceinfo({
@@ -140,13 +129,8 @@ function AddPlaces(props) {
         } else {
           navigate("/error");
         }
-      })
-      .catch((error) => {
-        console.error("Error uploading the place:", error);
-        alert("An error occurred while adding the place. Please try again.");
       });
   };
-
   return (
     <div>
       <Header user={true} navItems={navItems} />
@@ -303,18 +287,27 @@ function AddPlaces(props) {
             value={placeinfo.fiveDay.day5}
             onChange={onUpdateField3}
           />
-
-          <br />
-          <label htmlFor="photo">Photo: </label>
+          {/* <select name="days" onChange={onUpdateField} style={{marginLeft: "30%"}}>
+            <option>No.of days</option>
+            {days.map((option, index) => {
+              return <option key={index}>{option}</option>;
+            })}
+          </select>
+          <select name="busType" onChange={onUpdateField}>
+            <option>Bus Types</option>
+            {busType.map((option, index) => {
+              return <option key={index}>{option}</option>;
+            })}
+          </select> */}
           <input
-            placeholder={"photo"}
-            leftIcon={"bi bi-card-text"}
-            type={"file"}
-            name={"photo"}
+            style={{ marginLeft: "30%" }}
+            placeholder="choose picture"
+            type="file"
+            name="photo"
             onChange={(e) => setImage(e.target.files[0])}
           />
           <br />
-          <Btn type={"submit"} btnValue={btnValue} />
+          <Btn type="submit" value={btnValue} />
         </form>
       </div>
     </div>

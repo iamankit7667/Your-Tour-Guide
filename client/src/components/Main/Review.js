@@ -19,8 +19,9 @@ const Review = () => {
         navigate("/error");
       }
     });
-  }, []);
+  }, [navigate]);
   SwiperCore.use([Autoplay]);
+
   return (
     <div className="section">
       <div className="review" id="review">
@@ -45,11 +46,15 @@ const Review = () => {
         >
           {feedback &&
             feedback.map((item, key) => {
+              const defaultImage = "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-symbol-image-default-avatar-profile-icon-vector-social-media-user-symbol-209498286.jpg";
+              const image = item.userDetails?.image || defaultImage; // Use default image if not available
+              const name = item.userDetails?.username || "Ankit"; // Use "Ankit" if name is not available
+
               return (
                 <SwiperSlide key={key}>
                   <ReviewComp
-                    link={item.userDetails.image}
-                    name={item.userDetails.username}
+                    link={image}
+                    name={name}
                     data={item.feedback}
                   />
                 </SwiperSlide>

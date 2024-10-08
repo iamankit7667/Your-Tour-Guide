@@ -33,9 +33,9 @@ function RegisterForm(props) {
     if (
       /\s/.test(userinfo.username) ||
       userinfo.username.trim().length < 1 ||
-      userinfo.username.trim().length > 8
+      userinfo.username.trim().length > 10
     ) {
-      setRegisterError([true, "username contains more than 8 characters"]);
+      setRegisterError([true, "username contains more than 10 characters"]);
     } else if (userinfo.password.trim().length < 6) {
       setRegisterError([true, "password should be altleast 6 characters"]);
     } else if (userinfo.password !== userinfo.confirmedPassword) {

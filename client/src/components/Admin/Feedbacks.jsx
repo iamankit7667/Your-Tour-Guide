@@ -30,14 +30,18 @@ const Feedbacks = () => {
       ) : (
         <div className="feedbacks">
           {feedbacks &&
-            feedbacks.map((feedback) => {
+            feedbacks.map((feedback, index) => {
+              const defaultImage = "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-symbol-image-default-avatar-profile-icon-vector-social-media-user-symbol-209498286.jpg";
+              const image = feedback.userDetails?.image || defaultImage; // Use default image if not available
+              const name = feedback.userDetails?.username || "Ankit"; // Use "Ankit" if name is not available
+
               return (
-                <div className="place-box1">
+                <div className="place-box1" key={index}>
                   <div className="feed-pic">
-                    <img src={feedback.userDetails.image} alt={"image"} />
+                    <img src={image} alt="User" />
                   </div>
                   <div className="place-details">
-                    <h1>{feedback.userDetails.username}</h1>
+                    <h1>{name}</h1>
                     <div>
                       <p>{feedback.feedback}</p>
                     </div>

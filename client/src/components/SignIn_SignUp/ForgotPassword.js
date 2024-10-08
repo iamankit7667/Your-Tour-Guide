@@ -28,31 +28,44 @@ function ForgotPassword(props) {
     setUserinfo(nextFieldState);
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
+
+    // Validate input fields
     if (userinfo.password1.trim().length < 6) {
       setLoginError([true, "Password length must be greater than 6"]);
+      return;
     } else if (userinfo.password1 !== userinfo.password2) {
       setLoginError([true, "Passwords do not match"]);
-    } else {
-      setLoginError([false, ""]);
-      Axios
-        .post("users/forgotpassword", {
-          email: id,
-          password: userinfo.password1,
-        })
-        .then((resp) => {
-          if (resp.status === 200) {
-            localStorage.setItem("user", resp.data);
-            Cookies.set("user", resp.data.token, { expires: 1 });
-            props.updated();
-            navigate("/index");
-          } else {
-            setLoginError([true, resp.data.error]);
-          }
-        });
+      return;
     }
-    navigate("/index");
+
+    try {
+      // Reset login error state
+      setLoginError([false, ""]);
+
+      // Send the request to update the password
+      const response = await Axios.post("users/forgotpassword", {
+        email: id,
+        password: userinfo.password1,
+      });
+
+      if (response.status === 200) {
+        // Set user data in local storage and cookies
+        localStorage.setItem("user", JSON.stringify(response.data));
+        Cookies.set("user", response.data.token, { expires: 1 });
+
+        // Call the updated method and navigate
+        props.updated();
+        navigate("/index");
+      } else {
+        // Set the error message from the response
+        setLoginError([true, response.data.error]);
+      }
+    } catch (error) {
+      console.error(error);
+      setLoginError([true, "An error occurred while resetting the password."]);
+    }
   };
 
   return (
@@ -86,7 +99,7 @@ function ForgotPassword(props) {
           onChange={onUpdateField}
         />
         <Btn type={"submit"} value={"Submit"} />
-        <br></br>
+        <br />
       </form>
     </div>
   );
