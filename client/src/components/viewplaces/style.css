@@ -1,0 +1,132 @@
+.viewAllPlaces {
+  background-color: rgba(0, 0, 0, 0.077);
+  height: 100%;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 10px;
+}
+.head .Heading {
+  width: 85%;
+}
+.head div {
+  font-size: large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.head div select {
+  font-size: large;
+}
+.place-box1 {
+  background-color: #fff;
+  margin: 7px 150px 10px 150px;
+  margin-bottom: 5rem;
+  border-radius: 25px;
+  padding: 3px 3px;
+  display: flex;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.place-box1 .place-pic {
+  width: 40%;
+  height: 100%;
+  display: block;
+  padding: 0.5%;
+  float: left;
+}
+
+.place-box1 .place-pic img {
+  object-fit: fill;
+  width: 100%;
+  height: 343px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.place-box1 .place-details {
+  float: left;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.place-box1 .place-details .detail {
+  margin-top: 2rem;
+  height: 180px;
+  overflow: hidden;
+}
+
+.place-box1 .place-details .detail h3 {
+  font-size: 19px;
+}
+
+.place-box1 .place-details .detail h2 {
+  font-size: 25px;
+}
+
+.place-box1 .place-details .detail p {
+  font-size: 17px;
+}
+
+.place-box1 .place-details .rating {
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.place-box1 .place-details .rating p {
+  font-size: 20px;
+}
+
+.place-box1 .place-details .rating .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+}
+
+.place-box1 .button-holder {
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+  margin-bottom: 3rem;
+}
+
+.place-box1 .button-holder .button {
+  padding: 5px;
+}
+
+.place-box1 .button-holder .button a {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.place-box1 .button-holder .button .place-btn {
+  background-color: #fac102;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 7px;
+  margin-left: 5px;
+}
+
+.place-box1 .button-holder .button .place-btn:hover {
+  background: none;
+  color: #fac102;
+  border: 2px solid #fac102;
+  padding-top: 5px;
+}
+
+.place-box1 .place-details .rating {
+  color: #fac102;
+  font-size: large;
+}
+

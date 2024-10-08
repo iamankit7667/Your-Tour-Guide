@@ -1,0 +1,98 @@
+.login-form-container {
+  width: 100%;
+  height: auto;
+  padding: 0px 30px 0px 30px;
+}
+
+.top-btn {
+  color: var(--orange);
+  height: 45px;
+  width: 85%;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.log-error {
+  height: 45px;
+  width: 85%;
+  background-color: #f63838;
+  border-radius: 7px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+}
+
+.log-success{
+  height: 45px;
+  width: 85%;
+  background-color: #00b300;
+  padding-left: 20px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+}
+
+.log-error p {
+  font-size: 15px;
+  color: #fff;
+  text-transform: none;
+  line-height: 45px;
+}
+
+.log-error span {
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+}
+
+.log-success p {
+  font-size: 15px;
+  color: #fff;
+  text-transform: none;
+  line-height: 45px;
+}
+
+.log-success span {
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+}
+
+.loginForm {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm p {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none;
+  color: #fff;
+}
+
+.loginForm h2{
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  text-transform: none;
+  margin-bottom: 20px;
+}
