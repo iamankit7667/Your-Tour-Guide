@@ -2,23 +2,23 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "./AxiosConfig";
 
-import ScrollTop from "./Components/ScrollTop";
-import Index from "./Components/Main/Index";
-import ViewPlace from "./Components/viewplaces/ViewPlace";
-import PlaceDetails from "./Components/PlacesHotel/PlaceDetails";
-import Book from "./Components/Book/Book";
-import Payment from "./Components/PaymentGateway/Payment";
-import Error from "./Components/ErrorPage/Error";
-import Profile from "./Components/ProfilePage/Profile";
-import Tours from "./Components/BookingCart/Cart";
-import Bookings from "./Components/Bookings/Bookings";
-import Admin from "./Components/Admin/Admin";
-import Addadmin from "./Components/Admin/Addadmin";
-import AddPlaces from "./Components/Admin/AddPlaces";
-import Feedbacks from "./Components/Admin/Feedbacks";
-import ViewAll from "./Components/Admin/ViewAll";
-import Edit from "./Components/BookingCart/Edit";
-import DisplayPackages from "./Components/Admin/DisplayPackages";
+import ScrollTop from "./components/ScrollTop"
+import Index from "./components/Main/Index";
+import ViewPlace from "./components/viewplaces/ViewPlace";
+import PlaceDetails from "./components/PlacesHotel/PlaceDetails";
+import Book from "./components/Book/Book";
+import Payment from "./components/PaymentGateway/Payment";
+import Error from "./components/ErrorPage/Error";
+import Profile from "./components/ProfilePage/Profile";
+import Tours from "./components/BookingCart/Cart";
+import Bookings from "./components/Bookings/Bookings";
+import Admin from "./components/Admin/Admin";
+import Addadmin from "./components/Admin/Addadmin";
+import AddPlaces from "./components/Admin/AddPlaces";
+import Feedbacks from "./components/Admin/Feedbacks";
+import ViewAll from "./components/Admin/ViewAll";
+import Edit from "./components/BookingCart/Edit";
+import DisplayPackages from "./components/Admin/DisplayPackages";
 function App() {
   axios.defaults.withCredentials = true;
   return (
